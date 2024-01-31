@@ -1740,16 +1740,16 @@ class GenerationMixin:
             else:
                 kwargs["student_lm"] = True
                 student_model_kwargs = generation_config.student_lm.generate(
-                    inputs,
-                    generation_config,
-                    logits_processor,
-                    stopping_criteria,
-                    prefix_allowed_tokens_fn,
-                    synced_gpus,
-                    assistant_model,
-                    streamer,
-                    negative_prompt_ids,
-                    negative_prompt_attention_mask,
+                    inputs=inputs,
+                    generation_config=generation_config,
+                    logits_processor=logits_processor,
+                    stopping_criteria=stopping_criteria,
+                    prefix_allowed_tokens_fn=prefix_allowed_tokens_fn,
+                    synced_gpus=synced_gpus,
+                    assistant_model=assistant_model,
+                    streamer=streamer,
+                    negative_prompt_ids=negative_prompt_ids,
+                    negative_prompt_attention_mask=negative_prompt_attention_mask,
                     **kwargs,
                 )
 
