@@ -76,6 +76,8 @@ from pathlib import Path
 
 from setuptools import Command, find_packages, setup
 
+abc = 1
+
 
 # Remove stale transformers.egg-info directory to avoid https://github.com/pypa/pip/issues/5466
 stale_egg_info = Path(__file__).parent / "transformers.egg-info"
